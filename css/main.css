@@ -392,7 +392,7 @@ div.separador p{
 
 /*************************************
 
-            NUESTRAS OBRAS
+            NUESTRAS OBRAS /temporal
 
 *************************************/
 div.nuestrasobras-container p{
@@ -421,6 +421,66 @@ div.nuestrasobras-container ul li img{
 box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
 }
 
+
+
+/*************************************
+
+           CONTACTO
+
+*************************************/
+
+form{
+    width: 100%;
+    background-color: #ccc;
+}
+.title{
+    font-weight: 700;
+    display: block;
+    padding-top: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #ffaa00;
+    font-size: 3em;
+
+}
+div.contenedor-campos{
+
+    display: flex;
+    flex-direction: column;
+      
+
+}
+label{
+    margin-top: 10px;
+}
+.campo{
+    
+    width:90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.campo input{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 6vh;
+    width: 80%;
+
+}
+textarea{
+    width: 300px;
+    height: 200px;
+}
+.enviar{
+    text-align: center;
+    margin: 10px 0;
+}
+.enviar input{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
 /* ==========================================================================
    Helper classes
