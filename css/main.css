@@ -101,6 +101,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+/*************************************
+
+            GLOBAL DESIGN
+
+*************************************/
 body{
     margin: 0;
     padding: 0;
@@ -109,7 +116,11 @@ body{
 }
 
 
-/**Global button**/
+/*************************************
+
+        BOTON GLOBAL
+
+*************************************/
 .boton{
     font-size: .8em;
     text-decoration: none;
@@ -119,7 +130,11 @@ body{
     border-radius: 10%;
     background-color: #0097a7
 }
-/**Header **/
+/*************************************
+
+                HEADER
+
+*************************************/
 
 div.headercontainer{
     width: 100%;
@@ -158,7 +173,11 @@ div.contenidoheader ul li a{
     font-size: 1.4em;
 }
 
-/**Inicio**/
+/*************************************
+
+        INICIO
+
+*************************************/
 main{
     width: 100%;
    
@@ -228,7 +247,11 @@ main{
     text-transform: uppercase;
 }
 
-/**Nuestros servicios **/
+/*************************************
+
+        Nuestros servicios 
+
+*************************************/
 .nuestros-servicios {
 
    
@@ -245,24 +268,7 @@ box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 
 
 
-/*
-h2{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    text-align: center;
-}
 
- h2::after{
-    content: '';
-    background-image: url(../img/img/separador.png);
-    margin: 0 auto;
-    height: 30px;
-    width: 100px;
-    display: block;
-}
-
-*/
 section > h1
 {
     text-align: center;
@@ -324,10 +330,96 @@ section > h1::after{
 }
 
 
-/**NUESTRAS OBRAS **/
+/*************************************
 
+                SEPARADOR
 
+*************************************/
 
+div.containerseparador{
+    margin-top: 10px;
+    padding: 0;
+}
+
+div.separador{
+    width: 100%;
+    background-image: url(../img/experiencia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+div.separador::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+ 
+   
+}
+div.separador p{
+    margin: 0;
+    z-index: 1;
+    filter: brightness(1);
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    top: 0;
+    right: 0;
+    
+}
+
+.containerseparador a{
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/*************************************
+
+            NUESTRAS OBRAS
+
+*************************************/
+div.nuestrasobras-container p{
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+div.nuestrasobras-container ul{
+    list-style: none;
+}
+div.nuestrasobras-container ul li {
+
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+div.nuestrasobras-container ul li img{
+    max-width: 90%;
+    border: 1px solid black;
+    -webkit-box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
+box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
+}
 
 
 /* ==========================================================================
