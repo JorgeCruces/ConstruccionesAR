@@ -148,6 +148,50 @@ div.logo img{
     max-height: 30vh;
 }
 
+.navlogo{
+    display: none;
+}
+
+@media only screen and (min-width:998px){
+    div.containertodo{
+        width: 60%;
+        margin: 0 auto;
+    }
+    div.contenidoheader{
+        display: none;
+    }
+    div.logo {
+        
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+        float: left;
+       
+    }
+    .navlogo{
+        display: block;
+    }
+    .navlogo {
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+    }
+    .navlogo li{
+        font-size: 1.2em;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .navlogo li a{
+        text-decoration: none;
+        color: #000;
+        
+    }
+}
+
 div.contenidoheader ul{
     padding: 0;
     margin: 0;
@@ -295,6 +339,15 @@ section > h1::after{
     text-transform: none;
 
 }
+@media only screen and (min-width:998px){
+    .contenedor{
+        width: 32%;
+        background-color: white;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        float: left;
+    }
+}
 .contenedor h1{
     text-transform: uppercase;
     font-size: 2em;
@@ -403,22 +456,31 @@ div.nuestrasobras-container p{
 }
 
 div.nuestrasobras-container ul{
+    padding: 0;
     list-style: none;
+    width: 90%;
+    margin: 0 auto;
 }
 div.nuestrasobras-container ul li {
-
+    
     text-align: center;
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    padding-bottom: 20px;
+   padding: 10px; 
+    background-color: #b3d4fc;
+    background-image: url(../img/oli.jpg);
+    width: 95%; 
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #999999;
+    margin-bottom: 10px; 
+    
 }
 div.nuestrasobras-container ul li img{
-    max-width: 90%;
-    border: 1px solid black;
-    -webkit-box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
-box-shadow: 12px 15px 0px 1px rgba(0,0,0,0.75);
+  
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+    border: 1px solid #000000; 
+
 }
 
 
@@ -439,7 +501,7 @@ form{
     padding-top: 10px;
     margin: 10px;
     text-align: center;
-    color: #ffaa00;
+    color: #000;
     font-size: 3em;
 
 }
