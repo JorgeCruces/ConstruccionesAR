@@ -240,7 +240,7 @@ main{
     background-position: center;
     background-attachment: fixed;
     margin: 0;
-    height: 80vh;
+    height: 82vh;
     width: 100%;
     position: relative;
 }
@@ -296,6 +296,30 @@ main{
         Nuestros servicios 
 
 *************************************/
+.introduccion{
+       text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    font-style: italic;
+    margin: 15px 0;;
+    
+}
+.introduccion span{
+    color: #0097a7;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+.introduccion:last-of-type{
+    font-weight: bolder;
+    font-style: normal;
+    color: #0097a7;
+    text-decoration: underline;
+}
+
 .nuestros-servicios {
 
    
@@ -310,9 +334,18 @@ main{
 box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
+/*************************************
+
+        Nuestras obras
+
+*************************************/
 
 
+/*************************************
 
+        Nuestros servicios 
+
+*************************************/
 section > h1
 {
     text-align: center;
@@ -372,12 +405,35 @@ section > h1::after{
 
 .texto{
     width: 90%;
+    height: 49vh;
+   
 }
 .texto p{
     font-family:  'Open Sans', sans-serif;
     font-size: 1.2em;
     text-align: justify;
 }
+div.texto ul{
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    
+}
+div.texto ul li{
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+div.texto span{
+    font-weight: bold;
+}
+div.texto ul li i{
+    color: green;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+
 .iconos p{
     font-size: 7em;
 }
@@ -474,6 +530,24 @@ div.nuestrasobras-container ul li {
     margin-bottom: 10px; 
     
 }
+
+
+@media only screen and (min-width:998px){
+    div.nuestrasobras-container ul li {
+       margin: 10px;
+       margin-bottom: 10;
+      
+       
+    }
+    div.nuestrasobras-container ul li img{
+        height: 300px;
+    }
+    div.nuestrasobras-container ul{
+        display: flex;
+        justify-content: space-around
+    }
+}
+
 div.nuestrasobras-container ul li img{
   
     text-align: center;
@@ -491,9 +565,16 @@ div.nuestrasobras-container ul li img{
 
 *************************************/
 
+
 form{
     width: 100%;
     background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    
 }
 .title{
     font-weight: 700;
@@ -502,7 +583,7 @@ form{
     margin: 10px;
     text-align: center;
     color: #000;
-    font-size: 3em;
+    font-size: 2em;
 
 }
 div.contenedor-campos{
@@ -513,7 +594,7 @@ div.contenedor-campos{
 
 }
 label{
-    margin-top: 10px;
+    margin-top: 9px;
 }
 .campo{
     
@@ -543,6 +624,84 @@ textarea{
     font-size: 2em;
     margin-bottom: 20px;
 }
+
+
+
+/*************************************
+
+               FOOTER
+
+*************************************/
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+div.bajada{
+    width: 100%;
+    background-color: #fff;
+    
+}
+div.footer-informacion{
+    float:left;
+    width: 40%;
+    text-align: justify;
+    margin-left: 6vw;
+    
+
+}
+div.footer-informacion img{
+    width: 150px;
+    padding-left: 20px;
+}
+div.menu{
+    float:right;
+    width: 50%;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 0; 
+    padding: 0;
+}
+div.menu h3{
+    margin: 10px 0;
+}
+div.menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6em;
+   margin-right: 1em;
+}
+div.derechos {
+    text-align: center;
+}
+
+
+/*************************************
+
+              ContactoPAGE 2
+
+*************************************/
+div.contactocontainer {
+    background-color: #fff;
+    z-index: 1;
+    width: 100vw;
+    text-align: center;
+    opacity: .9;
+    margin: 20px 0 ;
+    
+}
+.enviar input{
+    float: left;
+}
+@media only screen and (min-width:998px){
+    div.contactocontainer {
+        width: 50vw;
+        
+    }
+}
+
+
+
 
 /* ==========================================================================
    Helper classes
