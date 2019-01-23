@@ -1,0 +1,61 @@
+[33mcommit 5ceaf38332b7916acee1e6f4b0c3f9e3bd68d1d7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: ad4a552 c8b21c6
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Wed Jan 23 00:39:50 2019 -0300
+
+    Merge branch 'master' of https://github.com/JorgeCruces/ConstruccionesAR
+
+[33mcommit ad4a55207784d5255c24ec9194c123765df157bf[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Wed Jan 23 00:38:50 2019 -0300
+
+    Se actualizo los comentarios, se puso un footer, y se arreglaron algunos problemas de diseño
+
+[33mcommit c8b21c6d813d44111bc4cf2091678b49b0578bd1[m
+Author: Jorge Cruces <43831109+JorgeCruces@users.noreply.github.com>
+Date:   Mon Jan 21 22:10:21 2019 -0300
+
+    Create CNAME
+
+[33mcommit e7d2c982dae824431318bd8101e704968c0e3eca[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Fri Jan 4 22:04:06 2019 -0300
+
+    Se corrigio el fondo de la tabla
+
+[33mcommit e523c7666f7f7803964737158924fa4f38bd4b89[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Fri Jan 4 22:02:36 2019 -0300
+
+    Se corriegieron erroes, se agrego un contacto bonito y un fondo para las imagenes
+
+[33mcommit 8bac901b0d53fc4c0d8365b9329e16c7deaa754e[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Thu Jan 3 20:38:07 2019 -0300
+
+    Agregado el contacto
+
+[33mcommit 59847258d8e49e0d15b3a3cad877c2c5355a275d[m
+Merge: 555d0b5 3e826ca
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Thu Jan 3 20:19:38 2019 -0300
+
+    Merge branch 'master' of https://github.com/JorgeCruces/ConstruccionesAR
+
+[33mcommit 555d0b51d97d2569d8ced2fc33e2163a3cee79cb[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Thu Jan 3 20:18:58 2019 -0300
+
+    Se agregaron nuevas imagenes, se agrego una página contacto y se le puso más diseño
+
+[33mcommit 3e826cae127ef0c1fdeddbc80e62ec99969a6745[m
+Author: Jorge Cruces <43831109+JorgeCruces@users.noreply.github.com>
+Date:   Wed Jan 2 21:14:07 2019 -0300
+
+    Create README.md
+
+[33mcommit 6a936d8b424c66a59f29795bc1cf702b884bd9d3[m
+Author: Jorge <jorgecrucescolegio@gmail.com>
+Date:   Wed Jan 2 21:12:26 2019 -0300
+
+    Primer commit
