@@ -1,7 +1,7 @@
 $(function(){
     
     $('.bars').on('click',function(){
-        $('#phone_menu').slideToggle(400);
+        $('#phone_menu').slideToggle(200);
       
     })
 
