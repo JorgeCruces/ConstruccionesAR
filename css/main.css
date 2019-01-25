@@ -18,6 +18,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+     scroll-behavior: smooth;
+      
 }
 
 /*
@@ -192,7 +194,18 @@ div.logo img{
     }
 }
 
+.bars{
+    font-size: 2em;
+    border: 2px solid black;
+    width: 10vw;
+    border-radius: 20%;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    
+}
 div.contenidoheader ul{
+ 
     padding: 0;
     margin: 0;
     list-style: none;

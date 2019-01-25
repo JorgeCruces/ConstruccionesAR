@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -41,17 +41,21 @@
                   <li><a href="#">Galeria</a></li>
                   <li><a href="#">Contacto</a></li>
                   <li><a href="#">Ayuda</a></li>
+                  
               </ul>
 
             </div>
             </div>
             <div class="contenidoheader">
-              <ul>
+                
+              <div class="bars"> <i class="fas fa-bars"></i></div>
+              <ul id="phone_menu"> 
                   <li><a href="#inicio">Inicio</a></li>
                   <li><a href="#nuestrosservicios">Nuestros Servicios</a></li>
                   <li><a href="#">Galeria</a></li>
                   <li><a href="#">Contacto</a></li>
                   <li><a href="#">Ayuda</a></li>
+                  
               </ul>
             </div>
       </nav>
@@ -230,6 +234,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
