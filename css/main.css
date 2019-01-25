@@ -158,6 +158,12 @@ div.logo img{
 }
 
 @media only screen and (min-width:998px){
+    div.logo img{
+        max-width: 30vw;
+        margin-left: 20px;
+        float: none;
+      
+    }
     div.containertodo{
         width: 60%;
         margin: 0 auto;
@@ -393,6 +399,9 @@ section > h1::after{
 
 }
 @media only screen and (min-width:998px){
+    .bars{
+        display: none;
+    }
     .contenedor{
         width: 32%;
         background-color: white;
