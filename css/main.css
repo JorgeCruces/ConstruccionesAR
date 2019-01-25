@@ -218,6 +218,7 @@ div.logo img{
     
 }
 div.contenidoheader ul{
+    display: none;
     clear: both;
     padding: 0;
     margin: 0;
