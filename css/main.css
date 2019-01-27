@@ -324,28 +324,17 @@ main{
 
 *************************************/
 .introduccion{
-       text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
     text-align: center;
-    font-style: italic;
     margin: 15px 0;;
-    
-}
-.introduccion span{
-    color: #0097a7;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 5px;
-    
-}
-.introduccion:last-of-type{
+    font-style: italic;
     font-weight: bolder;
-    font-style: normal;
     color: #0097a7;
     text-decoration: underline;
 }
+
 
 .nuestros-servicios {
 
@@ -355,7 +344,7 @@ main{
     background-color: #fff;
     margin-top: 10px;
 
-    /*Shadow qla*/
+    /*Shadow*/
 -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
@@ -634,68 +623,20 @@ div.nuestrasobras-container ul li img{
 
 /*************************************
 
-           CONTACTO
+               MAPA JS
 
 *************************************/
 
 
-form{
+section#mapita{
     width: 100%;
-    background-color: #ccc;
-    margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 65vh;
+    margin: 30px 0;
+}
+
+div#mapa{
+    height: 400px;
     
-}
-.title{
-    font-weight: 700;
-    display: block;
-    padding-top: 10px;
-    margin: 10px;
-    text-align: center;
-    color: #000;
-    font-size: 2em;
-
-}
-div.contenedor-campos{
-
-    display: flex;
-    flex-direction: column;
-      
-
-}
-label{
-    margin-top: 9px;
-}
-.campo{
-    
-    width:90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
-.campo input{
-    margin-left: 20px;
-    margin-bottom: 10px;
-    height: 6vh;
-    width: 80%;
-
-}
-textarea{
-    width: 300px;
-    height: 200px;
-}
-.enviar{
-    text-align: center;
-    margin: 10px 0;
-}
-.enviar input{
-    font-size: 2em;
-    margin-bottom: 20px;
 }
 
 
@@ -716,24 +657,53 @@ div.bajada{
     
 }
 div.footer-informacion{
-    float:left;
-    width: 40%;
+    
+    font-size: 1.2em;
     text-align: justify;
-    margin-left: 6vw;
+    padding: 10px;
+    margin: 40px;
     
 
 }
+
+div.footer-informacion h3{
+    text-align: center;
+}
 div.footer-informacion img{
-    width: 150px;
-    padding-left: 20px;
+    width: 200px;
+    display: inline-block;
+    
 }
 div.menu{
-    float:right;
-    width: 50%;
+   
+    width: 100%;
     text-align: center;
     font-size: 1.6em;
-    margin: 0; 
+    margin: 30px 0;
     padding: 0;
+   
+}
+
+@media only screen and (min-width:998px){
+
+
+    div.footer-informacion{
+        float:left;
+        width: 40%;
+        text-align: justify;
+        margin-left: 6vw;
+        
+    
+    }
+    div.contactocontainer {
+        float:right;
+        width: 50%;
+        text-align: center;
+        font-size: 1.6em;
+        margin: 0; 
+        padding: 0;
+        
+    }
 }
 div.menu h3{
     margin: 10px 0;
@@ -744,6 +714,8 @@ div.menu a{
     font-size: 1.6em;
    margin-right: 1em;
 }
+
+
 div.derechos {
     text-align: center;
 }
