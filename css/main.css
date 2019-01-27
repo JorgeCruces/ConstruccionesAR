@@ -566,59 +566,21 @@ div.separador p{
             NUESTRAS OBRAS /temporal
 
 *************************************/
-div.nuestrasobras-container p{
-    text-align: center;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-div.nuestrasobras-container ul{
-    padding: 0;
-    list-style: none;
-    width: 90%;
-    margin: 0 auto;
-}
-div.nuestrasobras-container ul li {
-    
-    text-align: center;
-   padding: 10px; 
-    background-color: #b3d4fc;
-    background-image: url(../img/feo.jpg);
-    width: 95%; 
+div.nuestrasobras-container{
+    widows: 90%;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid #999999;
-    margin-bottom: 10px; 
-    
 }
-
-
-@media only screen and (min-width:998px){
-    div.nuestrasobras-container ul li {
-       margin: 10px;
-       margin-bottom: 10;
-      
-       
-    }
-    div.nuestrasobras-container ul li img{
-        height: 300px;
-    }
-    div.nuestrasobras-container ul{
-        display: flex;
-        justify-content: space-around
-    }
+div.nuestrasobras-container img{
+    margin: 5px
 }
-
-div.nuestrasobras-container ul li img{
-  
+.center{
     text-align: center;
-    max-width: 95%;
-    margin: 0 auto;
-    border: 1px solid #000000; 
-
+    display: block;
+  margin: 10px auto;
+  width: 30vw;
+  font-size: 1.3em;
 }
-
 
 
 /*************************************

@@ -1,11 +1,6 @@
 $(function(){
 
-    // Navbar para celular
-    $('#phone_menu').hide();
-    $('.bars i').on('click',function(){
-        $('#phone_menu').slideToggle(200);
-      
-    });
+   
 
 
     // Mapa with LEAFLETJS 
@@ -19,6 +14,12 @@ $(function(){
     L.marker([-33.3505969,-70.7185454]).addTo(map)
     .bindPopup('Estamos AQUI!')
     .openPopup();
-   
+    
+    // Navbar para celular
+    $('#phone_menu').hide();
+    $('.bars i').on('click',function(){
+        $('#phone_menu').slideToggle(200);
+      
+    });
 
 });
