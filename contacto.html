@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>ConstruccionesAR</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="manifest" href="site.webmanifest">
@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+
 </head>
 
 <body>
@@ -34,24 +37,29 @@
         <div class="containertodo">
           <div class="logo">
               <img src="img/ar.svg" alt="logo">
+              <div class="bars"> <i class="fas fa-bars"></i></div>
               
               <ul class="navlogo">
-                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="https://www.construccionesar.com/">Inicio</a></li>
                   <li><a href="#nuestrosservicios">Nuestros Servicios</a></li>
-                  <li><a href="#">Conoce nuestras obras</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">Galeria</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
                   <li><a href="#">Ayuda</a></li>
+                  
               </ul>
 
             </div>
             </div>
             <div class="contenidoheader">
-              <ul>
-                  <li><a href="#inicio">Inicio</a></li>
+                
+             
+              <ul id="phone_menu"> 
+                  <li><a href="https://www.construccionesar.com/">Inicio</a></li>
                   <li><a href="#nuestrosservicios">Nuestros Servicios</a></li>
-                  <li><a href="#">Conoce nuestras obras</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">Galeria</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
                   <li><a href="#">Ayuda</a></li>
+                  
               </ul>
             </div>
       </nav>
@@ -60,55 +68,52 @@
     </header>
   </div>
 
-  <main></main>
-    <section id="inicio">
-    <div class="iniciocontainer">
-      <div class="hero">
-          <div class="contactocontainer">
-              <h1>CONTACTO</h1>
-              <section id="contacto">
-              
-            
-                
-                  <form action="mail.php" method="POST">
-                      <legend class="title">Contactanos con estos campos <i class="fas fa-file-signature"></i></legend>
-                      <div class="contenedor-campos">
-                          <div class="campo">
-                              <label for="nombre">
-                                  Nombre:
-                              </label>
-                              <input type="text" name="nombre" placeholder="Nombre">
-                          </div>
-                          <div class="campo">
-                                  <label for="Apellido">Apellido:</label>
-                                  <input type="text" name="apellido" placeholder="Apellido">
-                          </div>
-                              <div class="campo w100">
-                                      <label for="email">
-                                          Email:
-                                      </label>
-                                      <input type="email" name="email" placeholder="Email">
-                                  </div>
-                                  <div class="campo w100">
-                                          <label for="email">
-                                              Mensaje:
-                                          </label>
-                                          <textarea name="mensaje" name="mensaje" ></textarea>
-                                      </div>
-                                  
-                      </div> <!--Contenedores-->
-                      <div class="enviar">
-                          <input type="submit" class="boton" value="Enviar">
-                      </div>
-                  </form>
-              </section><!--CONTACTO-->
+
+  <!--Form a llenar-->
+
+  <main>
+    <section>
+    
+        <div id="container_form" >
+            <div id="background" ></div>
+            <div id="form_content">
+              <h1>Formulario</h1>
+              <form action="#" method="POST" class="form clearfix">
+
+                <div class="campo">
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Su nombre">
+                </div> <!--Campo-->
+                <div class="campo">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Su apellido">
+                  </div> <!--Campo-->
+                  <div class="campo">
+                      <label for="work">Asunto </label>
+                      <select name="work" id="work">
+                        <option value="none">Seleccion un asunto </option>
+                        <option value="negocio">Negocio</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="ayuda">Ayuda</option>
+                      </select>
+                    </div> <!--Campo-->
+                    <div class="campo">
+                        <label for="msg">Su mensaje</label>
+                        <textarea rows="4" id="msg" name="msg" placeholder="Introduzca su mensaje aqui"></textarea>
+                         
+                      
+                          
+                      </div> <!--Campo-->
+                      <input type="submit" class="boton down">
+              </form>
+
+            </div>
           </div>
-      </div>
-    </div> <!--Hero container-->
-  </section> <!--Inicio -->
-
-  <!--CONTACTO -->
-
+     
+    </section>
+ 
+ </main>
+  
 
  <!--FOOTER -->
   
@@ -116,7 +121,9 @@
     <div class="bajada clearfix">
       <div class="footer-informacion">
         <h3>Sobre <span>CONSTRUCCIONESAR</span><img src="img/ar.svg" alt="logo"></h3> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, rem. Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus omnis, cupiditate, iusto ad cum provident asperiores sequi id, qui soluta ut debitis iure hic quaerat ipsum. Laboriosam, voluptatem maiores!</p>
+        <p>Empresa con 20 años de trayectoria, dedicada a la construcción en general (muebles, mármol, piedra pizarra, piedra musgo, piedra chacabuco, adoquines, enchape de ladrillos, etc). Construcciones y remodelaciones.
+            Trabajos de alta calidad y puntualidad.
+            </p>
       </div>
 
       <div class="menu">
@@ -141,6 +148,9 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

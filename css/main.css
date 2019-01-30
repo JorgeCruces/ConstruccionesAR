@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-:root{
+   :root{
     --fuenteprincpial: 'Oswald', sans-serif;
     --primario: #ffc107;
 
@@ -688,23 +688,137 @@ div.derechos {
               ContactoPAGE 2
 
 *************************************/
-div.contactocontainer {
-    background-color: #fff;
-    z-index: 1;
-    width: 100vw;
+#container_form{
+    display: block;
+    height: 100vh;
+    clear: both;
+    position: relative;
+}
+#background{
+    background-image: url(../img/experiencia.jpeg);
+
+    background-size: cover;
+   position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+   
+    filter: blur(3px);
+    filter: brightness(.8);
+    
+    z-index:-1;
+}
+#form_content{
+   
+    background: rgba(255, 255, 255, 0.4);
+    background-size: cover;
+    height: 100vh;
+    width: 96vw;
+    margin: auto;
     text-align: center;
-    opacity: .9;
-    margin: 20px 0 ;
+    font-size: 2em;
     
 }
-.enviar input{
-    float: left;
+
+#form_content > h1::after{
+    
+    content: '';
+    margin:  5px auto;
+    height: 30px;
+    width: 100px;
+    display: block;
+    background-repeat: none;
+    background-image: url("../img/separador.png");
 }
-@media only screen and (min-width:998px){
-    div.contactocontainer {
-        width: 50vw;
+#form_content > h1{
+    text-transform: uppercase;
+    padding-top: 20px;
         
+   
+        
+}
+
+/*Campos form*/
+.campo{
+    display: block;
+
+}
+.campo label{
+    text-align: center;
+    
+    font-size: 1.2em;
+    display: block;
+}
+.campo input{
+    width: 80%;
+    
+}
+.campo textarea{
+    font-size: 16px;
+    width: 90%;
+    height: 20vh;
+}
+
+@media only screen and (min-width:776px){
+    #container_form{
+      
+        height: 100vh;
+        font-weight: bold;
+        
+     
     }
+    #background{
+     
+      
+        filter: brightness(.8);
+    
+    }
+   
+ 
+    .campo{
+    
+        margin-bottom: 30px;
+        width: 47%;
+       display: initial;
+       float: left;
+       text-transform: capitalize;
+       
+       
+      
+    }
+    .campo:nth-child(4){
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        border: 1px solid #000;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 10px;
+    }
+    .campo:nth-child(4) label{
+        color: #fff;
+    }
+    .campo:nth-child(2) label{
+        color: #fff;
+    }
+  
+    .campo input{
+        text-align: center;
+        width: 30vw;
+       
+       
+       
+      
+    }    
+  
+    .down
+    {
+        clear: both;
+       width: 400px;
+       margin: 50px auto;
+    
+    }
+    
 }
 
 
